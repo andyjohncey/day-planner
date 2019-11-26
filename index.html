@@ -19,23 +19,29 @@
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p> Current Day: <span id="currentDay"></span></p>
     </header>
-    <div class="plannerContainer">
-        <!-- Timeblocks go here -->
-        <div class="timeSection" id="cloneItem">
-            <div class="row">
-                <div class="hour"></div>
-                <div class="memoContent"><textarea></textarea></div>
-                <div class="saveBtn">save<button style="font-size:24px fa fa-save" type="submit" value="submit" id="saveButton">
-                        <i fa fa-save></i></button></div>
-                <button id="clearPlannerButton"></button>
-            </div>
+
+    <!-- Timeblocks go here -->
+
+    <!-- <div class="dayButtons">
+        <div class="prevBtn"><button type = button id="prevDayButton">Previous Day</button></div>
+        <div class="nextBtn"><button type = button id="nextDayButton">Next Day</button></div>
+    </div> -->
+
+    <div class="hourSection" id="cloneItem">
+        <div class="hour"></div>
+        <input type=text class="memoContent">
+        <div class="saveBtn"><button style="font-size:24px fa fa-save" type="submit" id="saveButton">
+                <i fa fa-save>Save</i></button>
         </div>
- 
+
+
+    </div>
+    <button id="clearPlannerButton">Clear Planner</button>
+    <div class="plannerContainer"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <Script src="./assets/script.js"></Script>
 </body>
-
 </html>
