@@ -10,7 +10,7 @@ setInterval(updateTime, 1000);
 
 
 const fromTime = now.clone().hour(7);
-const toTime = now.clone().hour(24);
+const toTime = now.clone().hour(18);
 
 console.log(fromTime.format());
 console.log(toTime.format());
